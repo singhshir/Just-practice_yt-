@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit student profile </title> 
+      <style>
+         body {
+               font-family: Arial, sans-serif;
+               background-color: #f4f4f4;
+               margin: 0;
+               padding: 20px;
+         }
+         form {
+               background-color: #fff;
+               padding: 20px;
+               border-radius: 5px;
+               box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         }
+         div {
+               margin-bottom: 15px;
+         }
+         label {
+               display: block;
+               margin-bottom: 5px;
+               font-weight: bold;
+         }
+         input[type="text"],
+         input[type="number"],
+         input[type="date"],
+         input[type="tel"],
+         select {
+               width: 100%;
+               padding: 8px;
+               box-sizing: border-box;
+         }
+         button {
+               padding: 10px 15px;
+               background-color: #007BFF;
+               color: #fff;
+               border: none;
+               border-radius: 5px;
+               cursor: pointer;
+         }
+         button[type="reset"] {
+               background-color: #6c757d;
+         } 
+
+            <style>
+button {
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.save-btn {
+    background-color: green;
+    color: white;
+}
+
+.cancel-btn {
+    background-color: red;
+    color: white;
+} 
+</style>
+</head>
+<body>
+    <form>
+     <div>
+        <label for="school">Selected school</label>
+        <input type="text" id="school" name="school" placeholder="enter your school id" required>
+     </div>
+     <div>
+        <label for="NATIONAL_ID_NUMBER">National ID Number</label>
+        <input type="text" id="NATIONAL_ID_NUMBER" name="NATIONAL_ID_NUMBER" placeholder="enter your national id number" required>
+     </div>
+     <div>
+        <label for="first_name">FIRST NAME</label>
+        <input type="text" id="first_name" name="first_name" placeholder="enter  first name" required>
+     </div>
+     <div>
+        <label for="middel_name">MIDDLE NAME</label>
+        <input type="text" id="middel_name" name="middel_name" placeholder="enter middle name" >
+     </div>
+     <div>
+        <label for="last_name">LAST NAME</label>
+        <input type="text" id="last_name" name="last_name" placeholder="enter  last name" required>
+     </div>
+     <div>
+        <label for="gender">GENDER</label>
+        <input type="radio" id="gender" name="gender" value="male"> Male
+        <input type="radio" id="gender" name="gender" value="female"> Female
+        <input type="radio" id="gender" name="gender" value="other"> Other
+     </div>
+     <div>
+        <label for="class"> class  </label>
+        <select id="class" name="class" required>
+            <option value="">Select your class</option>
+            <option value="class 1"> 1</option>
+            <option value="class 2">2</option>
+            <option value="class 3"> 3</option>
+        </select>
+     </div>
+     <div>
+        <label for="Admit_year"> ADMIT YEAR</label>
+        <input type="number" id="Admit_year" name="Admit_year" placeholder="enter admit year" required>
+     </div>
+     <div>
+         <label for="DOB">DATE OF BIRTH</label>
+        <input type="date" id="DOB" name="DOB" required>
+        <labelfor="provience">PROVINCE</label>
+        <select id="provience" name="provience" required>
+            <option value="">Select your province</option>
+            <option value="Koshi">Koshi</option>
+            <option value="Madesh">Madesh</option>
+            <option value="Bagmati">Bagmati</option>
+            <option value="Gandaik">Gandaik</option>
+            <option value="Lumbani">Lumbani</option>
+            <option value="Karnali">Karnali</option>
+            <option value="Sudar-pashim">Sudar-pashim</option>
+            </select>
+     </div>
+     <div>
+      <label for="caste"> Caste</label>
+      <select id="caste" name="caste"required>
+         <option value="">Select your caste</option>  
+         <option value="Bramib/chattri">Bramin/chattri</option>
+         <option value="Dalit">Dalit</option>
+         <option value="Janajati">Janajati</option>   
+         <option value="others"> others</option>
+      </select>
+     </div>
+       <div>
+         <label for="language">Mother language</label>
+          <select id="language" name="language"required>
+         <option value="">Select your mother tonguee</option>  
+         <option value="Nepali">Nepali</option>
+         <option value="English">English</option>
+         <option value="Newari">Newari</option>   
+         <option value="others"> others</option>
+          </select>
+       </div>
+       <div>
+          <label for="Disability Type*">Disability Type*</label>
+         <select id="Disability Type*" name="ECD_TYPE"required>
+         <option value="">Select Disability Type</option>  
+         <option value="blind">blind</option>
+         <option value="deaf">deaf</option>
+         <option value="multiple disabilities">multiple disabilities</option>
+         <option value="heart problem"> Heart problem</option>
+         <option value="D/A">D/A</option>
+          </select>
+      
+       </div>
+       <div>
+         <label for="contract number"> contract number</label>
+         <input type="tel"id="contract number" name="contract number" required>
+       </div>         
+      <div>
+         <label for="father name">FATHER NAME</label>
+         <input type="text" id="father name" name="father name" placeholder="enter father name" required>
+      </div>
+      <div>
+         <label for="mother name">MOTHER NAME</label>
+         <input type="text" id="mother name" name="mother name" placeholder="enter mother name" required>
+      </div>
+      <div> 
+         <label for="guardian name">GUARDIAN NAME</label>
+         <input type="text" id="guardian name" name="guardian name" placeholder="enter guardian name" required>   
+      </div>
+      <div>
+         <label for="gardian phone number">GUARDIAN PHONE NUMBER</label>
+         <input type="tel" id="gardian phone number" name="gardian phone number" placeholder="enter guardian phone number" required>
+      </div> 
+         <!-- Save Button -->
+    <button type="submit">Save</button>
+
+    <!-- Cancel Button -->
+    <button type="reset">Cancel</button>
+           
+    </form>
+</body>
+</html>
